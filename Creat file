@@ -1,0 +1,20 @@
+//fstrem library allows us to work with files
+// to use tohe fstrem library, include both the standard <iostream> and the <fstream>
+
+//ofstrem    Creates and writes to files
+//ifstrem    Reads from files
+
+#include<iostream>
+#include<fstream>
+using namespace std;
+int main()
+{
+    //Create and open a text file
+    ofstream Myfile("Filename.text");
+
+    //write at the file
+    Myfile<<"Files can be tricky, but it is fun enough!";
+
+    //Close the file
+    Myfile.close();
+}
